@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace GRowthPath.AssignmentAPI.Migrations
+namespace GrowthPath.AssignmentAPI.Migrations
 {
     [DbContext(typeof(AssignmentDbContext))]
     partial class AssignmentDbContextModelSnapshot : ModelSnapshot

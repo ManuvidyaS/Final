@@ -1,6 +1,6 @@
 ﻿namespace GRowthPath.AssignmentAPI.Models.DTO
 {
-    public class CourseProgressDto
+    public class UpdateProgressDto
 
     {
 

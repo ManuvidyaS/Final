@@ -3,7 +3,8 @@
     public class CourseAssignmentDto
     {
 
-        public string EmployeeId { get; set; }  // From Auth API UserId
+        public string EmployeeId { get; set; } // From Auth API UserId
+
         public int CourseId { get; set; }
     }
 }

@@ -6,8 +6,11 @@ namespace GrowthPath.AuthAPI.Service
     public interface IAuthService
     {
         Task<string> Register(RegistrationRequestDto registrationRequestDto);
+
         Task<LoginResponseDto> Login(LoginRequestDto loginRequestDto);
-        Task<bool> AssignRole(string email, string rolename);
+
+        //Task<bool> AssignRole(string email, string rolename);
+
         Task<ApplicationUser> GetUserByIdAsync(string userId);
 
     }

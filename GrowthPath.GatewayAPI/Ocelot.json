@@ -272,8 +272,48 @@
 
       "UpstreamHttpMethod": [ "GET" ]
 
-    }
+    },
 
+    // Feedback API Routes
+
+    {
+      "DownstreamPathTemplate": "/api/feedback",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7726
+        }
+      ],
+      "UpstreamPathTemplate": "/feedback-api",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/feedback/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7726
+        }
+      ],
+      "UpstreamPathTemplate": "/feedback-api/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/feedback/course/{courseId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7726
+        }
+      ],
+      "UpstreamPathTemplate": "/feedback-api/course/{courseId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
   ],
 
   "GlobalConfiguration": {

@@ -34,6 +34,8 @@ namespace GrowthPath.AuthAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
 
             app.UseHttpsRedirection();
             app.UseAuthentication();

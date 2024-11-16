@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace GRowthPath.AssignmentAPI.Migrations
+namespace GrowthPath.AssignmentAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class triallll : Migration
+    public partial class n : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,7 +19,8 @@ namespace GRowthPath.AssignmentAPI.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     EmployeeId = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CourseId = table.Column<int>(type: "int", nullable: false),
-                    AssignedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    AssignedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ModulesCompleted = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

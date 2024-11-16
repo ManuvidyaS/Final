@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace GRowthPath.AssignmentAPI.Migrations
+namespace GrowthPath.AssignmentAPI.Migrations
 {
     [DbContext(typeof(AssignmentDbContext))]
-    [Migration("20241112064222_triallll")]
-    partial class triallll
+    [Migration("20241114074447_n")]
+    partial class n
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,6 +42,9 @@ namespace GRowthPath.AssignmentAPI.Migrations
                     b.Property<string>("EmployeeId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ModulesCompleted")
+                        .HasColumnType("int");
 
                     b.HasKey("AssignmentId");
 

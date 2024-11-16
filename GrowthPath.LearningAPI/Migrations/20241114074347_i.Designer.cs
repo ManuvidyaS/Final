@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GrowthPath.LearningAPI.Migrations
 {
     [DbContext(typeof(CourseDbContext))]
-    [Migration("20241114034953_modules")]
-    partial class modules
+    [Migration("20241114074347_i")]
+    partial class i
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

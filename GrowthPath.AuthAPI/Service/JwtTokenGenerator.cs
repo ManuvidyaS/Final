@@ -53,6 +53,6 @@ namespace GrowthPath.AuthAPI.Service
             return tokenHandler.WriteToken(token);
         }
 
-     
+
     }
 }
